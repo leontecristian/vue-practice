@@ -1,4 +1,7 @@
 <template>
+  <div>
+      <InputText type="text" v-model="value" />
+  </div>
       <div>
     <div class="top-row">
       <div class="top part">
@@ -34,6 +37,7 @@
   </div>
 </template>
 <script>
+
 import availableParts from '../data/parts';
 
 function getPreviousValidIndex(index, length) {
@@ -47,6 +51,9 @@ function getNextValidIndex(index, length) {
 }
 
 export default {
+  components: {
+
+  },
   name: 'RobotBuilder',
   data() {
     return {
